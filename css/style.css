@@ -3,7 +3,7 @@
   color: #fff; }
 
 #main-header .headshot {
-  background-image: url(../img/jv-portrait.jpeg);
+  background-image: url(../img/jv-portrait.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -13,7 +13,7 @@
       height: 70vw; } }
 
 #main-header .port-item {
-  width: 30%; }
+  width: 25%; }
   #main-header .port-item .fa {
     font-size: 2em; }
 
@@ -21,6 +21,58 @@
   opacity: 0.8;
   cursor: pointer; }
 
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .port-item {
     padding: 3em !important; } }
+
+.other-skills ul {
+  list-style-position: inside; }
+  @media (max-width: 360px) {
+    .other-skills ul {
+      column-count: 1; } }
+  @media (min-width: 360px) {
+    .other-skills ul {
+      column-count: 2; } }
+  @media (min-width: 767px) {
+    .other-skills ul {
+      column-count: 3; } }
+
+.card-deck {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  align-items: stretch;
+  margin-bottom: 20px; }
+
+.card-deck .card {
+  display: block; }
+  @media (max-width: 576px) {
+    .card-deck .card {
+      flex-basis: 100%; } }
+  @media (min-width: 576px) {
+    .card-deck .card {
+      flex-basis: 80%; } }
+  @media (min-width: 767px) {
+    .card-deck .card {
+      flex-basis: 33.33%; } }
+
+.full-width-card {
+  margin-bottom: 20px; }
+  .full-width-card .full-width-logo {
+    width: 50%; }
+
+#nudge-card {
+  padding-top: 3px;
+  padding-bottom: 116px; }
+
+#ccc-card {
+  padding-top: 51px; }
+  #ccc-card #ccc-card-body {
+    padding-top: 59px; }
+
+#csm-logo {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+#csm-card-body {
+  padding-bottom: 68px; }
