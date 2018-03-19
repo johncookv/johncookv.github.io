@@ -59,7 +59,10 @@
 .full-width-card {
   margin-bottom: 20px; }
   .full-width-card .full-width-logo {
-    width: 50%; }
+    width: 100%; }
+    @media (min-width: 767px) {
+      .full-width-card .full-width-logo {
+        width: 50vw; } }
 
 #nudge-card {
   padding-top: 3px;

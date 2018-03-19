@@ -83,7 +83,10 @@ $break-lg: 1200px;
 .full-width-card {
   margin-bottom: 20px;
   .full-width-logo {
-    width: 50%;
+    width: 100%;
+    @media(min-width: $break-sm) {
+      width: 50vw;
+    }
   }
 }
 
