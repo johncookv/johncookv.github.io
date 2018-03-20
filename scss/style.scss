@@ -90,6 +90,22 @@ $break-lg: 1200px;
   }
 }
 
+.input-group-addon {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+#name-icon {
+  padding: 0.5rem 1.1rem;
+}
+
+#email-icon {
+  font-size: 1.04rem;
+}
+
 #nudge-card {
   padding-top: 3px;
   padding-bottom: 116px;
@@ -109,4 +125,16 @@ $break-lg: 1200px;
 
 #csm-card-body {
   padding-bottom: 68px;
+}
+
+
+@media(min-width: 576px) {
+  .port-item span {
+    display: inline-block;
+  }
+}
+@media(max-width: 575px) {
+  .port-item span {
+    display: none;
+  }
 }
