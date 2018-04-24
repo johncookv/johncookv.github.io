@@ -1,6 +1,18 @@
-$break-sm: 767px;
-$break-md: 991px;
-$break-lg: 1200px;
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+li::before {
+  left: 0;
+  position: absolute;
+  content: "•";
+}
 
 .bg-black {
   background: #000;
@@ -8,17 +20,13 @@ $break-lg: 1200px;
 }
 
 #main-header {
-  // img {
-  //   width: 100%;
-  //   height: 100%;
-  // }
   .headshot {
     background-image: url(../img/jv-portrait.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
-    @media(max-width: $break-sm) {
+    @media(max-width: 767px) {
       height: 70vw;
     }
   }
@@ -38,21 +46,20 @@ $break-lg: 1200px;
 
 }
 
-@media(min-width:$break-lg){
+@media(min-width:1200px){
   .port-item{
     padding:3em !important;
   }
 }
 
 .other-skills ul {
-  list-style-position: inside;
   @media(max-width: 360px) {
     column-count: 1;
   }
   @media(min-width: 360px) {
     column-count: 2;
   }
-  @media(min-width: $break-sm) {
+  @media(min-width: 767px) {
     column-count: 3;
   }
 }
@@ -75,17 +82,17 @@ $break-lg: 1200px;
     flex-basis: 80%;
   }
 
-  @media(min-width: $break-sm) {
+  @media(min-width: 767px) {
     flex-basis: 33.33%;
   }
 }
 
 .full-width-card {
   margin-bottom: 20px;
-  .full-width-logo {
+  .big-logo {
     width: 100%;
-    @media(min-width: $break-sm) {
-      width: 50vw;
+    @media(min-width: 767px) {
+      width: 60%;
     }
   }
 }
